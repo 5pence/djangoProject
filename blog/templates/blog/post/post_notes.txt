@@ -1,0 +1,10 @@
+With the {% extends %} template tag we tell Django to inherit from the blog/base.html template.
+truncatewords does what it says on the tin - i.e. truncates the number of words to the given number (30)
+linebreaks converts the output into HTML line breaks.
+
+You can concatenate as many template filters as you wish; each one will be applied to the output generated
+by the preceding one.
+
+Since the Page object we are passing to the template is called posts, we include the pagination template 
+in the post list template, passing the parameters to render it correctly. You can follow this method to
+reuse your pagination template in the paginated views of different models.

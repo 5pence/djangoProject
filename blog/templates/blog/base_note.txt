@@ -1,0 +1,6 @@
+{% load static %} tells Django to load static template tags that are provided by the django.contrib.staticfiles
+application, which is contained in the settings installed_apps.
+After loading them we are able to use the {% static %} template tag throughout this template.
+With this tag you can include the static files, such as the blog.css file.
+The two {% block %} tags tell Django that you want to define a block in that area. Templates that inherit
+from this from this template can fill the blocks with content.

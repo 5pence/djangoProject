@@ -1,0 +1,4 @@
+The pagination template expects a Page object in order to render the previous and next links and to
+display the current page and total pages of results.
+
+Note this separation of the paginator means it can be reused in paginated views of different models.
